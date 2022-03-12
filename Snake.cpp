@@ -95,8 +95,6 @@ void Draw(int rows, int cols, vector<int> snakeX, vector<int> snakeY)
 
 void SpawnFruit()
 {
-	srand(time(NULL));
-
 	vector<int> freeX, freeY;
 
 	for (int i = 1; i < HEIGHT - 1; i++)
@@ -127,6 +125,7 @@ int main()
 	eDir dir;
 	dir = STOP;
 
+	srand(time(NULL));
 	SpawnFruit();
 
 	running = true;
