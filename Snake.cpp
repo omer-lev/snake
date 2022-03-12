@@ -220,9 +220,9 @@ int main()
 		}
 
 		
-		Draw(20, 50, snakeX, snakeY);
+		Draw(HEIGHT, WIDTH, snakeX, snakeY);
 
-		Sleep(50);
+		Sleep(50); // speed (higher - slower)
 	}
 
 	return 0;
